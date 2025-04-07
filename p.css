@@ -10,8 +10,6 @@ body {
     color: white;
     background:black;
 }
-
-
 .header {
     position: fixed;
     top: 0;
@@ -78,12 +76,12 @@ body {
 
 
 .home-content h1 {
-    font-size: 3rem; /* Increase font size */
+    font-size: 3rem; 
     font-weight: bold;
-    color: #fff; /* Ensure visibility */
+    color: #fff; 
     text-align: center;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow for better contrast */
-    margin-top: 10px; /* Adjust spacing */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    margin-top: 10px; 
 }
 
 
@@ -165,7 +163,29 @@ body {
     opacity: 0;
     animation: slideUp 1s ease forwards 2s, pulse 1.5s infinite alternate 2s;
 }
-
+.gradient-text {
+    background: linear-gradient(90deg, #00ffd5, #00bfff, #00ffae); /* brighter aqua shades */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 255, 234, 0.5); /* soft glow effect */
+  }
+  @keyframes pulse-glow {
+    0% {
+      text-shadow: 0 0 5px rgba(0, 255, 234, 0.5);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(0, 255, 234, 0.9);
+    }
+    100% {
+      text-shadow: 0 0 5px rgba(0, 255, 234, 0.5);
+    }
+  }
+  
+  .gradient-text {
+    animation: pulse-glow 3s infinite;
+  }
+    
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -253,7 +273,7 @@ body {
     }
     100% {
         transform: translateY(0);
-        opacity: 1; */
+        opacity: 1; 
     }
 }
 .about {
@@ -265,7 +285,7 @@ body {
     align-items: center;
     justify-content: center;
     padding: 50px 10%;
-}
+} 
 
 .about-container {
     display: flex;
@@ -332,7 +352,7 @@ body {
     box-shadow: 0 0 10px #0ef;
 }
 
-/* Animations */
+
 @keyframes textGlow {
     0% { text-shadow: 0 0 10px #0ef; opacity: 0; }
     100% { text-shadow: 0 0 25px #0ef, 0 0 50px #0ef; opacity: 1; }
@@ -427,7 +447,6 @@ body {
     background: rgba(0, 238, 255, 0.2);
 } 
 
-/* Animation for the Section Title */
 @keyframes textGlow {
     0% {
         text-shadow: 0 0 10px #0ef;
@@ -437,7 +456,7 @@ body {
     }
 }
 
-/* Contact Section */
+
 .contact {
     padding: 100px 10%;
     background: black;
@@ -454,7 +473,7 @@ body {
     animation: textGlow 1s ease-in-out infinite alternate;
 }
 
-/* Contact Form & Info */
+
 .contact-container {
     display: flex;
     flex-direction: column;
@@ -471,7 +490,7 @@ body {
     box-shadow: 0 0 15px rgba(0, 238, 255, 0.5);
 }
 
-/* Input Fields */
+
 .input-box input, .input-box textarea {
     width: 100%;
     padding: 10px;
@@ -488,7 +507,7 @@ body {
     resize: none;
 }
 
-/* Submit Button */
+
 .btn {
     width: 100%;
     padding: 12px;
@@ -507,7 +526,7 @@ body {
     color: #0ef;
 }
 
-/* Contact Info */
+
 .contact-info {
     margin-top: 20px;
     font-size: 18px;
@@ -523,3 +542,4 @@ body {
 .contact-info a:hover {
     text-decoration: underline;
 }
+
